@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
 
   dev_dependencies = [['mocha', '>= 0.9.8'],
                       ['fakeweb'], 
-                      ['minitest', '~> 4.0'],
+                      ['minitest', '~> 5.1'],
                       ['rake']
   ]
 
