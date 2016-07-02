@@ -15,7 +15,7 @@ module Test
   end
 end
 
-class Test::Unit::TestCase < Minitest::Unit::TestCase
+class Test::Unit::TestCase < Minitest::Test
   def self.test(string, &block)
     define_method("test:#{string}", &block)
   end
@@ -39,7 +39,7 @@ class Test::Unit::TestCase < Minitest::Unit::TestCase
     end
 
     ShopifyAPI::Base.clear_session
-    ShopifyAPI::Base.site = "https://this-is-my-test-shop.myshopify.com/admin"
+    ShopifyAPI::Base.site = 'https://this-is-my-test-shop.myshopify.com/admin'
     ShopifyAPI::Base.password = nil
     ShopifyAPI::Base.user = nil
   end
